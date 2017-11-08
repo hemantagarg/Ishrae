@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtAllDiscuT"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:background="@drawable/rect_selector_tab_left"
+            android:gravity="center"
+            android:text="@string/All_Discussion_Topics"
+            android:textAllCaps="false"
+            android:textColor="@color/tab_txt_selector"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/txtLatestDisc"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:background="@drawable/rect_selector_tab_right"
+            android:gravity="center"
+            android:text="@string/Latest_Discussion_Topics"
+            android:textAllCaps="false"
+            android:textColor="@color/tab_txt_selector"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvForum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtNoDataCate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No data found"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llProfileMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imvEditProfile"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/ic_edit_profile"
+                    android:visibility="visible" />
+
+                <com.ishrae.app.custom.CircleImageView
+                    android:id="@+id/imvUserImage"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:scaleType="fitXY"
+
+                    android:src="@mipmap/ic_default_user" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:text="Mr. Ankit Dua"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/txtSwitchBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/switch_board"
+                android:background="@color/toolbar_bg_dark"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtFBLikesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_fb_profile"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="6532 Likes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMemberShipNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_member_ship"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/txtMemberShipNumberLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtChapterName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_chapter"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/txtChapterNameLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtInstituteName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_institute"
+                android:drawablePadding="@dimen/dp_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/txtInstituteNameLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_mobile"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_profile_email"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtProfileAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_profile_address"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_change_password"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtPaymentDetails"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_payment_details"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:text="@string/Payment_Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:id="@+id/txtPaymentDetailsLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/txtUpgradeMembership"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:drawableLeft="@mipmap/ic_payment_details"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10"
+                android:text="@string/Upgrade_Membership"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/txtUpgradeMembershipLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:visibility="gone" />
+
+<LinearLayout
+    android:id="@+id/llUpdateProf"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+            <TextView
+                android:id="@+id/txtUpdatProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16"
+                android:visibility="visible" />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:visibility="visible" />
+</LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

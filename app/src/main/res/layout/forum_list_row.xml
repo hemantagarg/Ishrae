@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:elevation="@dimen/dp_5"
+            card_view:cardCornerRadius="@dimen/dp_2"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="@dimen/dp_5"
+                    android:paddingRight="@dimen/dp_5">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTopic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Falling Film"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_14"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txtCreatedDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:text="02 Apr 2017"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_13" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="dfasdasdfasdfdsfadsfadsfadsfasdfsdfadsfadsfasdfasdfasdfadsf"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_13" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_14"
+                                android:layout_height="@dimen/dp_14"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ic_posted_by"
+                                android:tint="@color/black" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/Posted_By"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_13" />
+
+                            <TextView
+                                android:id="@+id/txtCreatedBy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/designation"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_13" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_14"
+                                android:layout_height="@dimen/dp_14"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ic_posted_by"
+                                android:tint="@color/black" />
+
+                            <TextView
+
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/Total_Active_Users"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_13" />
+
+                            <TextView
+                                android:id="@+id/txtActiveUserF"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_13" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_14"
+                                android:layout_height="@dimen/dp_14"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ic_message"
+                                android:tint="@color/black" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="@string/Comments"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/sp_13" />
+
+                            <TextView
+                                android:id="@+id/txtMessageCountF"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.8"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_13" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <com.ishrae.app.custom.CircleImageView
+        android:id="@+id/imvForumUser"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:scaleType="centerCrop"
+android:visibility="gone"
+        android:src="@mipmap/ic_default_user" />
+
+
+</RelativeLayout>

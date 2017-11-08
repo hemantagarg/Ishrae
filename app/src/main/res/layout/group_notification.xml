@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:padding="@dimen/dp_10">
+<RelativeLayout
+    android:id="@+id/relCross"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    >
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_cross"
+        android:tint="@color/white"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imgCloseGN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_cross"
+        android:padding="@dimen/dp_10"
+
+        android:tint="@color/white" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/relCross"
+        android:layout_above="@+id/cbGN">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvGroupNoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/txtNoGroupNoti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="center"
+            android:text="@string/no_event_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/cbGN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/Dont_show_me_again"
+        android:theme="@style/StyleCheckBox"
+
+        android:textColor="@color/white" />
+
+</RelativeLayout>

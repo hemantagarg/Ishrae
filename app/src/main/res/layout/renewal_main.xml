@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/txtEmptyRNewal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="@string/no_event_found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llRNContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <include layout="@layout/renewal_header" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRNewal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/rounded_rect_bottom"
+            android:gravity="center"
+            android:text="@string/INVOICE"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+        <TextView
+            android:id="@+id/txtUpdatInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/llRnewal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/btn_blue_bg"
+            android:paddingLeft="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textColor="@color/white"
+                android:clickable="false"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/Renewal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

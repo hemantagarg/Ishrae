@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_1"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="@string/Advocacy_program_with"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/sp_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/txtPETitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:ellipsize="end"
+                            android:hint="@string/post_event_title"
+                            android:inputType="textCapSentences"
+                            android:maxLines="2"
+                            android:padding="@dimen/dp_10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <EditText
+                            android:id="@+id/etNoOfDelegates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:hint="@string/No_of_delegates"
+                            android:inputType="number"
+                            android:nextFocusDown="@+id/etNoOfMembers"
+                            android:padding="@dimen/dp_10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        android:nextFocusDown="@+id/etNoOfPresent"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <EditText
+                            android:id="@+id/etNoOfMembers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:hint="@string/No_of_non_members"
+                            android:inputType="number"
+                            android:padding="@dimen/dp_10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <EditText
+                            android:id="@+id/etNoOfPresent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:hint="@string/No_of_presente_technical"
+                            android:inputType="number"
+                            android:nextFocusDown="@+id/etSpeakerName"
+                            android:padding="@dimen/dp_10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_10"
+                        android:text="@string/Speaker_Detail"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                    <LinearLayout
+                        android:id="@+id/llAddMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/login_btn_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <TextView
+                            style="@style/button_style_login_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:background="@color/transparent"
+                            android:text="@string/Add_More"
+                            android:textSize="@dimen/sp_16" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/dp_5"
+                            android:src="@mipmap/ic_plus"
+                            android:tint="@color/white" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/dp_5"
+                            card_view:cardCornerRadius="@dimen/dp_2"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:contentPadding="@dimen/dp_5">
+
+                            <EditText
+                                android:id="@+id/etSpeakerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/transparent"
+                                android:hint="@string/Speaker"
+                                android:inputType="textCapWords"
+                                android:nextFocusDown="@+id/eTxTopicNameC"
+                                android:padding="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/sp_16" />
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/dp_5"
+                            card_view:cardCornerRadius="@dimen/dp_2"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:contentPadding="@dimen/dp_5">
+
+                            <EditText
+                                android:id="@+id/eTxTopicNameC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/transparent"
+                                android:hint="@string/Topic"
+                                android:inputType="textCapSentences"
+                                android:nextFocusDown="@+id/etSpeakerMobil"
+                                android:padding="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/sp_16" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/dp_5"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/dp_5"
+                            card_view:cardCornerRadius="@dimen/dp_2"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:contentPadding="@dimen/dp_5">
+
+                            <EditText
+                                android:id="@+id/etSpeakerMobil"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/transparent"
+                                android:hint="@string/Mobile_no"
+                                android:inputType="number"
+                                android:nextFocusDown="@+id/etSpeakerEmail"
+                                android:padding="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/sp_16" />
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:elevation="@dimen/dp_5"
+                            card_view:cardCornerRadius="@dimen/dp_2"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:contentPadding="@dimen/dp_5">
+
+                            <EditText
+                                android:id="@+id/etSpeakerEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/transparent"
+                                android:hint="@string/Email"
+                                android:inputType="textEmailAddress"
+                                android:padding="@dimen/dp_10"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/gray"
+                                android:textSize="@dimen/sp_16" />
+
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvAddMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <EditText
+                            android:id="@+id/etSpeakerDescr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:gravity="top|left"
+                            android:hint="@string/Description"
+                            android:maxLines="4"
+                            android:minLines="4"
+                            android:padding="@dimen/dp_10"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/llUploadFiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/upload_files"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvEventUploadFiles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/dp_7"
+                    android:paddingRight="@dimen/dp_7"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/llUploadPhotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/upload_photos"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvEventUploadPhotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_7"
+                    android:paddingRight="@dimen/dp_7"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:elevation="@dimen/dp_5"
+                        android:visibility="gone"
+                        card_view:cardCornerRadius="@dimen/dp_2"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:contentPadding="@dimen/dp_5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/Choose_File"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/sp_16" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCreateEvent"
+        style="@style/button_style_login_signup"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/btn_blue_bg"
+        android:text="@string/CREATE" />
+</LinearLayout>

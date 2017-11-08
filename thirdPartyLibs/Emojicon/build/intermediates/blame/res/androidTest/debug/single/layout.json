@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\emojicon_grid.xml",
+        "source": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\bundles\\debug\\res\\layout\\emojicon_grid.xml"
+    },
+    {
+        "merged": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\emojicon_item.xml",
+        "source": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\bundles\\debug\\res\\layout\\emojicon_item.xml"
+    },
+    {
+        "merged": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\emojicons.xml",
+        "source": "D:\\studioWorkspace\\ishrae_android\\Emojicon\\build\\intermediates\\bundles\\debug\\res\\layout\\emojicons.xml"
+    }
+]

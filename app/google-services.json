@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "247993550351",
+    "firebase_url": "https://ishrae-dd6fd.firebaseio.com",
+    "project_id": "ishrae-dd6fd",
+    "storage_bucket": "ishrae-dd6fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247993550351:android:57a10ebe389a84bc",
+        "android_client_info": {
+          "package_name": "com.ishrae.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247993550351-cc2ng56n1uc9eikvr43bh40tvmjsc522.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ishrae.app",
+            "certificate_hash": "3f9cd4a009a54e7c3f48967ace86d4bb8f40658e"
+          }
+        },
+        {
+          "client_id": "247993550351-06ag3u0avvavm21np875pnvrd93tgo5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgz7qEuRTnG5lzsP9TCC_jV-F6uxUKTIQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247993550351-06ag3u0avvavm21np875pnvrd93tgo5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

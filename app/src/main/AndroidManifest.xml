@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ishrae.app">
+
+    <permission
+        android:name="com.ishrae.app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <permission
+        android:name="com.ishrae.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.ishrae.app.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="com.ishrae.app.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".AppInitialization"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommonFormAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgotPasswordForNonMember"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.RenewalAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LoginNonMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activity.ForgotPassword"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SkipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ReplyAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ChangePassActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewsDetails"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.EmailDetailAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CIQEventsListAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CIQEventsDetailAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activity.ForumDetailAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CourseDetail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.CreateTopicAct"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activity.PollResultAct"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+
+        <!--FCM-->
+        <service android:name=".notification.FireBaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".notification.FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

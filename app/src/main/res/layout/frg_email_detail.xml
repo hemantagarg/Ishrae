@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/svED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_170"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_email_detail_bg" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtEmialTitleED"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/txtEmialSubTitleED"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLikeContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imgLike"
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_35"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/dp_5"
+                        android:src="@mipmap/ic_like"
+                        android:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/imgDisLike"
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_35"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/dp_5"
+                        android:src="@mipmap/ic_dish_like"
+                        android:tint="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:elevation="@dimen/dp_5"
+                card_view:cardCornerRadius="@dimen/dp_2"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/txtEmialDescrED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <WebView
+                    android:id="@+id/wvEmialDescrED"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></WebView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llShowInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/btn_blue_bg"
+        android:paddingLeft="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:paddingRight="@dimen/dp_30"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            android:clickable="false"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_16"
+
+            android:text="@string/Show_Interest" />
+
+    </LinearLayout>
+</LinearLayout>

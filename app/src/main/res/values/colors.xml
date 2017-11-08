@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="off_white">#f1f5f7</color>
+    <color name="green_dark">#02A752</color>
+    <color name="grey">#757575</color>
+    <color name="colorActivated">#caeeff</color>
+    <color name="primary">#C41230</color>
+    <color name="primaryDark">#9E0C24</color>
+    <color name="textPrimary">#000</color>
+    <color name="accent">#FFCCD4</color>
+    <color name="colorHighlight">#ffaaff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#8C000000</color>
+    <color name="btn_bg">#ffcc1b</color>
+    <color name="btn_bg_light">#CCffcc1b</color>
+    <color name="gray">#808080</color>
+    <color name="toolbar_bg">#A2CB46</color>
+    <color name="toolbar_bg_dark">#4BB64A</color>
+    <color name="boradcast_icon">#d1b002</color>
+    <color name="light_white">#F2ffffff</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="light_gray_more">#B3808080</color>
+    <color name="app_bg_color">#EBECEE</color>
+
+    <color name="primary_light_alpha50">#7FCFD8DC</color>
+    <color name="blue">#3B89C8</color>
+    <color name="blue_light">#3D89C6</color>
+    <color name="blue_dark">#5A6D7C</color>
+    <color name="blue_dark1">#00008B</color>
+    <color name="green">#A2CB46</color>
+    <color name="orange">#EEB96C</color>
+    <color name="gray_font">#666</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="user_msg_bg_color">#EBEBEB</color>
+    <color name="my_msg_bg_color">#059CE6</color>
+    <color name="report_color">#FF0202</color>
+    <color name="red">#ff0000</color>
+</resources>

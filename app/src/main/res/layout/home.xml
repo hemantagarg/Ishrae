@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvBannersContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/fmBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                            android:id="@+id/vpBannerSlides"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="2dp"
+                            android:padding="3dp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:background="@color/blue">
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:visibility="gone">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/dp_10"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llMyIshrae"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="51dp"-->
+                    <!--android:src="@mipmap/ic_home_my_share" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/my_ishrae"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llMyProfile"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:src="@mipmap/ic_home_my_profile" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="My Profile"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llMyChapters"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:src="@mipmap/ic_home_my_chapter" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="My Chapter"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="@dimen/dp_10"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llHQDetails"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_home_hq_detail" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="HQ Details"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llNewsEvents"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_home_news_events" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="News Events"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llProgram"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView4"-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_home_program" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Program"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingBottom="@dimen/dp_10"-->
+                    <!--android:paddingLeft="@dimen/dp_10"-->
+                    <!--android:paddingRight="@dimen/dp_10"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llShop"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_shop" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Shop"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llElearning"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_elearning" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/Elearning"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/llForum"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".33"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/imageView3"-->
+                    <!--android:layout_width="@dimen/dp_50"-->
+                    <!--android:layout_height="@dimen/dp_50"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@mipmap/ic_forum" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Forum"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/sp_14" />-->
+                    <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvNavMenuHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvPresident"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/imgSponsor"
+                        android:layout_width="@dimen/dp_90"
+                        android:layout_height="@dimen/dp_90"
+                        android:src="@mipmap/ic_vishal_kapur" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtSponsorMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/txtSponsorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text=""
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/sp_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

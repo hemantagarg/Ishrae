@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_1"
+        android:orientation="horizontal">
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/spSelectCategoryEL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_1"
+            android:layout_weight="1"
+            android:background="@color/toolbar_bg_dark"
+            android:hint="@string/Select_Category"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCourseList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5" />
+
+    <TextView
+        android:id="@+id/txtErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:text="@string/No_record_found"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:visibility="gone" />
+
+</LinearLayout>

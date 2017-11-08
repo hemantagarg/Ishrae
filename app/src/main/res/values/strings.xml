@@ -1,0 +1,377 @@
+<resources>
+    <string name="app_name"> ISHRAE </string>
+
+    <!--Common Strings-->
+    <string name="error_member_id_blank"> Member Id / Login Id should not be blank</string>
+    <string name="error_otp_send_option"> Choose where do you want receive otp.</string>
+    <string name="error_password_blank"> Password should not be blank</string>
+    <string name="error_mobile_number_blank"> Mobile number should not be blank</string>
+    <string name="Logout">Logout</string>
+    <string name="Are_you_sure_to_logout">Do you want to logout?</string>
+    <string name="you_have_new_group_notifications">You have new group notifications</string>
+    <string name="error_old_pass_blank"> Old password cannot be blank</string>
+    <string name="error_new_pass_blank"> New password cannot be blank</string>
+    <string name="error_conf_new_blank"> Confirm new password cannot be blank</string>
+    <string name="error_conf_new_same"> New and Confirm password should be same</string>
+    <string name="Password_changed_successfully"> Password has been changed successfully. Login with new password.</string>
+
+    <string name="msg_internet"> internet not connected</string>
+    <string name="msg_token_expire"> Token expire, logout and login again.</string>
+    <string name="msg_server_error"> Server error. Try again later</string>
+
+    <!--Login String-->
+    <string name="memberId"> Member Id / Login Id</string>
+    <string name="password"> Password</string>
+    <string name="login"> Login</string>
+    <string name="forgot_pass"> Forgot Password?</string>
+    <string name="register_text"> Still don\'t have account? Join ISHRAE</string>
+    <string name="register_text_for_non_member"> Still don\'t have account? Register</string>
+    <string name="Skip">Guest User</string>
+    <string name="Login_As">Login As</string>
+    <string name="Already_have_account">Already have account. Log In</string>
+
+    <!-- Register String-->
+    <string name="Enter_User_Name">User Name</string>
+    <string name="Register">Register</string>
+
+    <string name="error_user_name_blank">Name should not be blank</string>
+    <string name="error_email_blank"> Email should not be blank</string>
+    <string name="name_error_msg">Name length minimum 1 characters.</string>
+    <string name="only_special_characters_not_allowed">Only special characters are not allowed in user name.</string>
+    <string name="only_numbers_not_allowed">Only numbers are not allowed in user name.</string>
+    <string name="enter_valid_email">Please enter valid Email.</string>
+
+    <!--Forgot Password-->
+    <string name="submit"> Submit</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_mobile_number">Mobile Number</string>
+
+
+    <!--Dashboard String-->
+    <string name="dashboard"> Dashboard </string>
+    <string name="desc"> It’s a matter of great pride &amp; honor for me being the President of the Society in the current year – I feel humbled. The theme of the current year is ICE: INSPIRE our members to come forward &amp; feel  </string>
+
+    <!--Side Menu String -->
+    <string-array name="nav_drawer_items">
+        <item>@string/My_Profile</item>
+        <item>@string/my_ishrae</item>
+        <item>@string/HQ_Details</item>
+        <item>@string/News_Events</item>
+        <item>@string/notification</item>
+        <item>@string/group_notification</item>
+        <item>@string/Mails</item>
+        <item>@string/settings</item>
+        <item>@string/Poll_Of_Day</item>
+        <!--<item>@string/Poll_Result</item>-->
+        <item>@string/Feedback</item>
+
+        <item>@string/Logout</item>
+    </string-array>
+
+    <!--Side Menu String -->
+    <string-array name="nav_drawer_items_non_member">
+        <item>@string/My_Profile</item>
+        <item>@string/my_ishrae</item>
+        <item>@string/News_Events</item>
+        <item>@string/notification</item>
+        <item>@string/Poll_Of_Day</item>
+        <!--<item>@string/Poll_Result</item>-->
+        <!--<item>@string/Feedback</item>-->
+        <item>@string/settings</item>
+        <item>@string/Logout</item>
+    </string-array>
+
+    <string name="post_event">Post Event</string>
+    <string name="Mails">Email</string>
+
+    <!--Side Menu String for Admin -->
+    <string-array name="nav_drawer_items_admin">
+        <item>@string/home</item>
+        <item>@string/post_event</item>
+        <item>@string/Logout</item>
+    </string-array>
+
+
+    <!--Home Menu Strings-->
+
+    <string name="My_Profile">My Profile</string>
+    <string name="My_Chapter">My Chapter</string>
+    <string name="News_Events">News &amp; Events</string>
+    <string name="HQ_Details">Office Bearers</string>
+    <string name="Shop">Shop</string>
+    <string name="Program">Program</string>
+    <!--Home Menu Member  String -->
+    <string-array name="home_menu_member_items">
+        <item>@string/my_ishrae</item>
+        <item>@string/My_Profile </item>
+        <item>@string/My_Chapter </item>
+        <item>@string/HQ_Details</item>
+        <item>@string/News_Events</item>
+        <item>@string/Program</item>
+        <item>@string/Shop</item>
+        <item>@string/Elearning</item>
+        <item>@string/Forum</item>
+    </string-array>
+
+    <string-array name="home_menu_non_member_items">
+        <item>@string/my_ishrae</item>
+        <item>@string/My_Profile </item>
+        <item>@string/News_Events</item>
+        <item>@string/Shop</item>
+        <item>@string/Elearning</item>
+        <item>@string/Forum</item>
+    </string-array>
+
+
+    <string-array name="home_menu_admin">
+        <item>@string/Total_Strength</item>
+        <item>@string/Member_In_Grace_Period</item>
+        <item>@string/Dormant_Members</item>
+        <item>@string/New_Member</item>
+        <item>@string/Renewal_Sustenance</item>
+        <item>@string/Programs_Added</item>
+        <item>@string/Pending_Post_Event</item>
+        <item>@string/Student_Member</item>
+        <item>@string/Student_Activity_Summary</item>
+
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!--Bottom Bar String-->
+    <string name="home">Home</string>
+    <string name="email">Email</string>
+    <string name="email_detail">Email Detail</string>
+    <string name="event_detail">Event Detail</string>
+
+
+    <!--My Profile String-->
+    <string name="my_profile"> My Profile </string>
+    <string name="To_download_the">To download the Invoice\n please visit</string>
+    <string name="Update_your_Profile_online">Update your profile online\n by visit</string>
+
+
+    <!--Change Password String-->
+    <string name="change_password"> Change Password </string>
+    <string name="old_pass"> Old Password </string>
+    <string name="new_pass"> New Password </string>
+    <string name="confirm_new_pass"> Confirm New Password </string>
+    <string name="update_pass"> Update Password </string>
+    <string name="Payment_Details">Payment Details</string>
+
+    <!--My Society String-->
+    <string name="my_society"> My Society </string>
+
+    <!--Hq Details String-->
+    <string name="hq_details"> Office Bearers </string>
+
+    <!--BOG String-->
+    <string name="bog"> BOG </string>
+    <string name="name"> Name </string>
+    <string name="company"> Company </string>
+    <string name="designation"> Designation </string>
+    <string name="regional_director"> Regional Directors </string>
+    <string name="all_india_chapter"> All India Chapters </string>
+    <string name="hq_committees"> HQ Committees </string>
+
+    <string-array name="hq_detail_tabs">
+        <item>@string/bog</item>
+        <item>@string/regional_director</item>
+        <item>@string/all_india_chapter</item>
+        <item>@string/hq_committees</item>
+    </string-array>
+
+    <!--Downloads String-->
+    <string name="downloads"> Downloads </string>
+
+    <!--NewsEvents & Events String-->
+    <string name="news_events"> News &amp; Events </string>
+
+    <!--News Details-->
+    <string name="news_details"> News Details </string>
+    <string name="Do_you_like_this_Event"> Show your interest by clicking on Yes.</string>
+    <string name="Do_you_dislike_this_Event"> Do you dislike this Event?</string>
+    <string name="Yes"> Yes</string>
+
+    <!--Notification String-->
+    <string name="notification"> Notifications </string>
+    <string name="notification_Detail"> Notification Detail</string>
+
+    <!--Group Notification String-->
+    <string name="group_notification"> Group Notifications</string>
+    <string name="show_all"> Show All</string>
+
+    <!--Settings String-->
+    <string name="settings"> Connect With Us </string>
+    <string name="Social"> Connect With Us </string>
+    <string name="about_ishrae"> About ISHRAE </string>
+    <string name="aims"> AIMS &amp; OBJECTIVES </string>
+    <string name="affiliate"> AFFILIATE SOCIETIES </string>
+
+    <!--My ISHRAE String-->
+    <string-array name="my_ISHRAE_strings">
+        <item>@string/about_ishrae</item>
+        <item>@string/affiliate</item>
+        <item>@string/aims</item>
+    </string-array>
+
+    <string name="my_ishrae"> My ISHRAE</string>
+
+    <!--My Chapter String-->
+    <string name="my_chapter"> My Chapter </string>
+    <string name="chapter_name"> Chapter Name :  </string>
+    <string name="abbreviation"> Abbreviation :  </string>
+    <string name="address"> Address : </string>
+    <string name="parent_chapter"> Parent Chapter : </string>
+    <string name="region"> Region :  </string>
+    <string name="state"> State :  </string>
+    <string name="contact_person_first"> Contact Person 1 :  </string>
+    <string name="contact_person_second"> Contact Person 2 :  </string>
+    <string name="telephone_first"> Telephone 1 :  </string>
+    <string name="telephone_second"> Telephone 2 :  </string>
+    <string name="email_first"> Email 1 :  </string>
+    <string name="email_second"> Email 2 :  </string>
+    <string name="fax"> Fax :  </string>
+    <string name="website"> Website :  </string>
+    <string name="description"> Description :  </string>
+
+    <!--Program String-->
+    <string name="program"> Program </string>
+
+
+    <string name="send_otp_on_Registered_mobile_number">Send otp on Mobile Number</string>
+    <string name="send_otp_on_Registered_email">Send otp on Email</string>
+    <string name="Start_Date">Start Date:</string>
+    <string name="Start">Start:</string>
+    <string name="End_Date">End Date:</string>
+    <string name="End">End:</string>
+    <string name="no_event_found">No event found</string>
+    <string name="No_record_found">No record found</string>
+    <string name="no_notifications_found">No Notification found</string>
+    <string name="no_polling_found">Records not found</string>
+    <string name="no_polling_result_found">Records not found</string>
+    <string name="no_Email_found">No Email found</string>
+
+    <string name="msg_camera_alert">Choose Profile Pic From</string>
+    <string name="media_library">Media Library</string>
+    <string name="camera">Camera</string>
+    <string name="cancel"> Cancel</string>
+    <string name="BUY">BUY</string>
+    <string name="Entry_Date">Entry\nDate</string>
+    <string name="Payment_Mode">Payment\nMode</string>
+    <string name="Amount">Amount</string>
+    <string name="Renewal_Date">Renewal\nDate</string>
+    <string name="INVOICE">INVOICE</string>
+    <string name="Renewal">Renewal</string>
+    <string name="Products">Products</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Categories">Categories</string>
+
+    <!-- Elearning -->
+    <string name="Member">Member</string>
+    <string name="Type">Type</string>
+    <string name="Individual_Course">Individual Course</string>
+    <string name="Elearning_Details">Course Details</string>
+    <string name="Elearning">E-Learning</string>
+    <string name="course_details"> Course Details </string>
+
+    <!--Forum Screen -->
+    <string name="All_Discussion_Topics">All Discussion Topics</string>
+    <string name="Latest_Discussion_Topics">Latest Discussion Topics</string>
+    <string name="Forum">Forum</string>
+    <string name="Forum_Detail">Forum Detail</string>
+    <string name="Posted_By">Posted By:</string>
+    <string name="Posted_On">Posted On:</string>
+    <string name="Report">Report</string>
+    <string name="Total_Active_Users">Active Users:</string>
+    <string name="Comments">Comments:</string>
+    <string name="Please_enter_message">Please enter message.</string>
+
+    <!--Product List-->
+    <string name="Select_Category">Select Category</string>
+    <string name="Select_Subcategory">Select Subcategory</string>
+
+    <!--Create Topic-->
+    <string name="Topic_Name">Topic Name</string>
+    <string name="Enter_Topic_Description">Enter Topic Description</string>
+    <string name="Create_Topic">Crerate Topic</string>
+    <string name="Please_enter_topic_name">Please enter topic name.</string>
+    <string name="Please_enter_post_event_title">Please enter post event title.</string>
+    <string name="Please_enter_topic_description">Please enter topic description.</string>
+    <string name="under_development">Under development</string>
+    <string name="Upgrade_Membership">Become Member</string>
+    <string name="Non_Member">Guest User</string>
+    <string name="Non_Member_Login">Guest User Login</string>
+    <string name="Non_Member_Register">Guest User Register</string>
+
+    <!-- DashBoard String-->
+    <string name="Total_Strength">Total Strength</string>
+    <string name="Member_In_Grace_Period">Member In Grace Period</string>
+    <string name="Dormant_Members">Dormant Members</string>
+    <string name="New_Member">New Member</string>
+    <string name="Renewal_Sustenance">Renewal/Sustenance</string>
+    <string name="Programs_Added">Programs Added</string>
+    <string name="Pending_Post_Event">Pending Post Event</string>
+    <string name="Student_Member">Student Member</string>
+    <string name="Student_Activity_Summary">Student Activity Summary</string>
+
+
+    <!--CIQ Events List -->
+    <string name="All_Type">All Type</string>
+    <string name="Regions">Regions</string>
+    <string name="Chapters">Chapters</string>
+    <string name="Type_colon">Type:</string>
+    <string name="Heading_colon">Heading:</string>
+    <string name="Venue_colon">Venue:</string>
+    <string name="Created_by_colon">CreatedBy:</string>
+    <string name="Updated_by_colon">UpdatedBy:</string>
+
+    <!--CIQ Events Detail -->
+    <string name="Advocacy_program_with"> Advocacy Program with FSAI </string>
+    <string name="No_of_delegates">No of Delegates</string>
+    <string name="No_of_non_members">No of Guest Users</string>
+    <string name="No_of_presente_technical">No of presente technical paper</string>
+    <string name="Speaker_Detail">Speaker Detail</string>
+    <string name="Speaker">Speaker</string>
+    <string name="Topic">Topic</string>
+    <string name="Mobile_no">Mobile no.</string>
+    <string name="Email">Email</string>
+    <string name="Description">Description</string>
+    <string name="Upload_File">Upload File</string>
+    <string name="Choose_File">Choose File</string>
+    <string name="Event_List">Event List</string>
+    <string name="CREATE">CREATE</string>
+    <string name="Event_Detail">Event Detail</string>
+    <string name="Add_More">Add More</string>
+    <string name="Please_Enter_No_of_Delegates">Please enter number of delegates</string>
+    <string name="Please_Enter_No_of_Non_Members">Please enter number of non members</string>
+    <string name="Please_Enter_No_of_Presente_technical_paper">Please enter number of presente technical paper</string>
+    <string name="Please_Fill_speaker_detail">Please fill speaker detail</string>
+    <string name="Please_Enter_description">Please enter description</string>
+
+    <string name="upload_files">Upload File(s)</string>
+    <string name="upload_photos">Upload Photo(s)</string>
+
+    <string name="post_event_title">Post Event Title</string>
+    <string name="You_can_upload_max_5_photos">You can upload max 5 photos at a time.</string>
+    <string name="Poll_Of_Day">Opinion Poll</string>
+    <string name="Poll_Result">Opinion Poll Result</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Previous">Previous</string>
+    <string name="Percentage">%</string>
+    <string name="Next">Next</string>
+    <string name="Finish">Finish</string>
+    <string name="Please_select_at_least_one_option">Please select at least one option.</string>
+    <string name="Opnion_Poll_Result">Opnion Poll Result</string>
+    <string name="Show_Interest">Show Interest</string>
+    <string name="ASHRAE_E_Learning_Course">ASHRAE E-Learning Course</string>
+    <string name="Send">Send</string>
+    <!--Group Notification string -->
+    <string name="Dont_show_me_again">Don\'t show me again</string>
+    <string name="switch_board">Switch Dashboard</string>
+    <string name="Thanks_for_showing_your_interest">Thanks for showing your interest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

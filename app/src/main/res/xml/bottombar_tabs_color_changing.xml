@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="@color/green"
+        icon="@mipmap/ic_home"
+        id="@+id/tabHome"
+        title="@string/home" />
+    <tab
+        barColorWhenSelected="@color/blue"
+        icon="@mipmap/ic_mail"
+        id="@+id/tabEmail"
+        title="@string/Mails" />
+
+    <tab
+        barColorWhenSelected="@color/green"
+        icon="@mipmap/ic_notif"
+        id="@+id/tabNotif"
+        title="@string/notification" />
+    <tab
+        barColorWhenSelected="@color/orange"
+        icon="@mipmap/tab_forms"
+        id="@+id/tabShare"
+        title="@string/Forum" />
+
+</tabs>
